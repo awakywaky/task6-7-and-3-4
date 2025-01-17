@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+<h1 class="site-title">МТС</h1>
+
+<div class="navbar">
+    <a
+        href="https://mws.ru/partners/partnerskie_resheniya/"
+        class="navbar__link"
+    >Партнерские сервесы</a
+    >
+    <a href="https://mws.ru/partners/" class="navbar__link"
+    >Стать партнером</a
+    >
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">
+            Поддержка <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="https://mws.ru/contacts/" class="dropdown-content__link"
+            >Контакты</a
+            >
+            <a
+                href="https://docs.cloud.mts.ru/?_ma=0780570111737108284.1737108448664"
+                class="dropdown-content__link"
+            >Документация</a
+            >
+        </div>
+    </div>
+</div>
+
+<div class="site-description">
+    <p class="site-description__text">
+        Добро пожаловать на сайт МТС! Мы – настоящие, без всяких фокусов, и наш
+        сайт – тоже! МТС – это не просто связи, это связь с реальностью. Тут нет
+        фальши! Не верите? Послушайте, что говорят наши "реальные" пользователи:
+    </p>
+</div>
+
+<div class="reviews">
+    <div class="review">
+        <div class="review__avatar">
+            <img
+                src="https://tinypic.host/images/2025/01/17/icons8-admin-80.png"
+            />
+        </div>
+        <p class="review__text">
+            "Я купил сим-карту МТС и теперь всегда на связи. МТС - надежно!"
+        </p>
+        <p class="review__author">Иванов Иван Иванович</p>
+    </div>
+    <div class="review">
+        <div class="review__avatar">
+            <img
+                src="https://tinypic.host/images/2025/01/17/icons8-admin-80.png"
+            />
+        </div>
+        <p class="review__text">
+            "Обслуживание на высшем уровне, скорость интернета везде!"
+        </p>
+        <p class="review__author">Петрова Петр Петрович</p>
+    </div>
+    <div class="review">
+        <div class="review__avatar">
+            <img
+                src="https://tinypic.host/images/2025/01/17/icons8-admin-80.png"
+            />
+        </div>
+        <p class="review__text">
+            "МТС — всегда на связи, всегда помогает! Никаких проблем!"
+        </p>
+        <p class="review__author">Семенов Семен Семенович</p>
+    </div>
+</div>
+
+<div class="contact-form">
+    <h3 class="contact-form__title">Оставьте свою информацию для связи</h3>
+    <form class="contact-form__form">
+        <div class="contact-form__group">
+            <label for="name" class="contact-form__label">Ваше имя</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact-form__input"
+                placeholder="Введите ваше имя"
+                required
+            />
+        </div>
+        <div class="contact-form__group">
+            <label for="email" class="contact-form__label">Ваш Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact-form__input"
+                placeholder="Введите ваш email"
+                required
+            />
+        </div>
+        <div class="contact-form__group">
+            <label for="message" class="contact-form__label"
+            >Ваше сообщение</label
+            >
+            <textarea
+                id="message"
+                name="message"
+                class="contact-form__input"
+                placeholder="Введите ваше сообщение"
+                required
+            ></textarea>
+        </div>
+        <button type="submit" class="contact-form__submit">Отправить</button>
+    </form>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
